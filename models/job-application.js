@@ -4,14 +4,13 @@
 // status : pending[defualt], approved , Reject   
 
 
-const { status } = require('express/lib/response');
 const mongoose = require('mongoose');
 
 const applicationSchema = new mongoose.Schema({
 
     jobid:{type:mongoose.Schema.Types.ObjectId,ref:"job"},
     seekerId:{type:mongoose.Schema.Types.ObjectId,ref:"job"},
-    jobstatus:{type:String,status:pending}
+    jobstatus:{type:String,default:'pending',enum:['pending','reject','approved']}
 
 })
 
