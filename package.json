@@ -1,0 +1,27 @@
+{
+  "name": "job_portal_api",
+  "version": "1.0.0",
+  "description": "API for Job Portal using express.js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibo777/Job_Portal_API.git"
+  },
+  "author": "Vaibhav Bunde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vibo777/Job_Portal_API/issues"
+  },
+  "homepage": "https://github.com/vibo777/Job_Portal_API#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.3"
+  }
+}
