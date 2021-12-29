@@ -23,10 +23,6 @@ app.use(express.json());
 
 // End-points to create
 
-
-
-
-
 // 6. update job - put
 // 7. delete job - delete   
 // 8. send file i.e Resume - post 
@@ -125,7 +121,7 @@ app.get("/jobs/:id",async(req,res)=>{
 
 // 5. Add new job  - post
 
-app.post("./job",(req,res)=>{
+app.post("./jobs",(req,res)=>{
 
     let job = req.body;
     let jobOBJ = new jobModel(job);     

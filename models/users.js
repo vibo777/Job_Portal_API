@@ -32,5 +32,5 @@ const JobSeekerSchema = new mongoose.Schema({
 
 },{timestamps:true})
 
-const jobseekerModel = new mongoose.Model('jobSeeker',JobProviderSchema);
+const jobseekerModel = new mongoose.model('jobSeeker',JobSeekerSchema);
 module.exports = jobseekerModel;
